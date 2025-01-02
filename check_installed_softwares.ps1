@@ -74,7 +74,7 @@ $sortedSoftwareList | ForEach-Object {
 }
 
 # Save to a CSV file if needed
-$csvPath = "C:\Users\melidrissi\Downloads\InstalledSoftware.csv"
+$csvPath = "C:\Users\username\Downloads\InstalledSoftware.csv"
 $sortedSoftwareList | Export-Csv -Path $csvPath -NoTypeInformation
 
 Write-Output "Installed software details have been saved to $csvPath"
