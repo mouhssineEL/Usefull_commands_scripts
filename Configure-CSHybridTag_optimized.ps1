@@ -362,7 +362,7 @@ function Export-Data {
 
 function Add_FalconTagFromList{
     # From a list , here we change to our list and don't forget to change the "{ $_."Hostname" }" by your column name ! 
-    $csvData1 = Import-Csv -Path "C:\Users\melidrissi\Downloads\PROJECTS\falcon_api\add_tag_list.csv"
+    $csvData1 = Import-Csv -Path "C:\Users\usernaùe\Downloads\PROJECTS\falcon_api\add_tag_list.csv"
     $list1 = $csvData1 | ForEach-Object { $_."Hostname" }
 
     # Retrieve the IDs for hosts only in CrowdStrike and filter out those that already have the tag or are of product type "Server"
