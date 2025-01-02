@@ -1,7 +1,7 @@
-﻿$csvData1 = Import-Csv -Path "C:\Users\melidrissi\Downloads\PROJECTS\falcon_api\list1.csv"
+﻿$csvData1 = Import-Csv -Path "C:\Users\username\Downloads\PROJECTS\falcon_api\list1.csv"
 $list1 = $csvData1 | ForEach-Object { $_."Endpoint Name" }
 
-$csvData2 = Import-Csv -Path "C:\Users\melidrissi\Downloads\PROJECTS\falcon_api\list2.csv"
+$csvData2 = Import-Csv -Path "C:\Users\username\Downloads\PROJECTS\falcon_api\list2.csv"
 $list2 = $csvData2 | ForEach-Object { $_."hostname" }
 
 $sentineloneSet = $list2 | Sort-Object -Unique
